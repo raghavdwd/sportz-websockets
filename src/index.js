@@ -1,5 +1,9 @@
 import express from "express";
 import http from "http";
+// Import and use match routes
+import { matchRouter } from "./routes/match.route.js";
+import { attachWebSocketServer } from "./ws/server.js";
+import { securityMiddleware } from "./arcjet.js";
 
 const PORT = Number(process.env.PORT || 8080);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -10,9 +14,8 @@ const server = http.createServer(app);
 
 app.use(express.json());
 
-// Import and use match routes
-import { matchRouter } from "./routes/match.route.js";
-import { attachWebSocketServer } from "./ws/server.js";
+app.use(securityMiddleware());
+
 app.use("/matches", matchRouter);
 
 const { broadcastMatchCreated } = attachWebSocketServer(server);
