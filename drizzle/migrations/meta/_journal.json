@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1770625837507,
-      "tag": "0000_busy_pandemic",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1770625958850,
-      "tag": "0001_stale_star_brand",
+      "when": 1770628563123,
+      "tag": "0000_cynical_archangel",
       "breakpoints": true
     }
   ]
