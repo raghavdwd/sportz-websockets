@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1770625837507,
+      "tag": "0000_busy_pandemic",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1770625958850,
+      "tag": "0001_stale_star_brand",
+      "breakpoints": true
+    }
+  ]
+}
